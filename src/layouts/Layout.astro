@@ -1,25 +1,16 @@
 ---
-export interface Props {
-	title: string;
-}
-
-const { title } = Astro.props as Props;
+import Head from '../components/Head.astro';
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<title>{title}</title>
-</head>
-<body>
-	<slot />
-</body>
+  <Head />
+  <body>
+    <slot />
+  </body>
 </html>
 
-<style>
+<!-- <style>
   :root {
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem); 
@@ -53,4 +44,4 @@ const { title } = Astro.props as Props;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
   }
-</style>
+</style> -->

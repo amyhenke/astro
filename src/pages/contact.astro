@@ -1,0 +1,46 @@
+---
+import Head from '../components/Head.astro';
+import LogoBar from '../components/LogoBar.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+	<Head title="Contact | Amy Henke" description="Web Developer Portfolio"/>
+	<body>
+		<main class="typography flex flex-col min-h-screen">
+            <div class="pagetitlesection flex justify-center flex-col px-8 py-10">
+				<LogoBar />
+				<h1>Contact</h1>
+				<h2>Lets keep things simple</h2>
+                <a href="/" class="backarrow"><i class="fa-solid fa-left-long"></i> Back</a>
+			</div>
+            <div class="contactdetails px-8 py-10 flex-1">
+                <p><span>Email</span> - <a href="mailto:amyleehenke1@gmail.com">amyleehenke1@gmail.com</a></p>
+                <a href="https://www.linkedin.com/in/amy-henke-b8836b177/" target="_blank" aria-label="Linked In"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="ml-2" href="https://github.com/amyhenke" target="_blank" aria-label="Git Hub"><i class="fa-brands fa-github"></i></a>
+                <a class="ml-2" href="https://codepen.io/amyhenke" target="_blank" aria-label="Code Pen"><i class="fa-brands fa-codepen"></i></a>
+            </div>
+        </main>
+    </body>
+</html>
+
+<style lang="scss">
+    .contactdetails {
+        background-color: var(--black);
+        color: #fff;
+        p {
+            margin-bottom: 30px;
+            span {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+        a {
+            &:hover {
+                color: var(--sage);
+            }
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+</style>
