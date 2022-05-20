@@ -6,8 +6,8 @@ import LogoBar from '../components/LogoBar.astro';
 <html lang="en">
 	<Head title="Amy Henke" description="Web Developer Portfolio"/>
 	<body>
-		<main class="typography min-h-screen flex flex-col justify-between">
-			<div class="hero flex justify-center flex-col px-8 py-10">
+		<main class="typography min-h-screen flex flex-wrap justify-between">
+			<div class="hero flex flex-col px-8 py-10">
 				<LogoBar />
 				<h1>Hey, <br/> I'm Amy Henke</h1>
 				<h2>Web Developer. DIY Enthusiast. Animal Lover.</h2>
@@ -29,6 +29,7 @@ import LogoBar from '../components/LogoBar.astro';
 
 <style lang="scss">
 	.hero {
+		flex: 1 1 40%;
 		h2 {
 			font-family: var(--font-normal);
 			font-size: 0.8rem;
@@ -36,6 +37,8 @@ import LogoBar from '../components/LogoBar.astro';
 		}
 	}
 	.home-nav {
+		flex: 1 1 60%;
+		align-self: flex-end;
 		.level1link {
 			font-size: 12rem;
 			line-height: 12.5rem;
@@ -69,7 +72,7 @@ import LogoBar from '../components/LogoBar.astro';
 			}
 		}
 	}
-
+	
 	@media only screen and (max-width: 1280px) and (max-height: 800px) {
 		.home-nav {
 			.level1link {
@@ -138,6 +141,24 @@ import LogoBar from '../components/LogoBar.astro';
 			.level1link {
 				font-size: 2.7rem;
     			line-height: 3.2rem;
+			}
+		}
+	}
+
+	//Macbook pro
+	@media only screen and (max-width: 1280px) and (max-height: 589px) {
+		main {
+			.hero {
+				h1 {
+					font-size: 3rem;
+					line-height: 3.2rem;
+				}
+			}
+			.home-nav {
+				.level1link {
+					font-size: 7rem;
+					line-height: 7.5rem;
+				}
 			}
 		}
 	}
