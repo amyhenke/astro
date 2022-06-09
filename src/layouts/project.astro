@@ -1,0 +1,103 @@
+---
+import Head from '../components/Head.astro';
+import LogoBar from '../components/LogoBar.astro';
+
+const { content } = Astro.props;
+let canonicalURL = Astro.canonicalURL;
+---
+
+<!DOCTYPE html>
+<html lang={content.lang || 'en'}>
+	<Head title={`${content.title} | Amy Henke`} description={content.description}image={content.image} {canonicalURL}/>
+    <style lang="scss">
+        html, body {
+            height: 100%;
+            main {
+                display: flex;
+                flex-flow: column;
+                height: 100%;
+                text-align: center;
+            }
+        }
+        .pagetitlesection {
+            text-align: center;
+        }
+        .content {
+            flex: 1 1 100%;
+            background-color: var(--black);
+            color: var(--white);
+            .inner {
+                max-width: 1200px;
+                margin: 0 auto;
+                h2.subheading {
+                    text-transform: inherit;
+                    font-style: italic;
+                    font-size: 2.5rem;
+                    line-height: 3rem;
+                    text-align: center;
+                    max-width: 700px;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                }
+                .technical {
+                    column-width: 100px;
+                    max-width: 500px;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    </style>
+	<body>
+		<main class="typography">
+            <div class="pagetitlesection flex justify-center flex-col px-8 py-10">
+				<LogoBar />
+				<h1 class="title">{content.title}</h1>
+                <h2 class="subtitle">{content.subtitle}</h2>
+                <a href="/portfolio" class="backarrow"><i class="fa-solid fa-left-long"></i> Back</a>
+			</div>
+			<div class="content p-8">
+                <div class="inner">
+                    <h2 class="subheading">{content.subheading}</h2>
+                    <ul class="technical">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>HTML5</li>
+                        <li>Silverstripe</li>
+                        <li>MAMP</li>
+                        <li>CSS3</li>
+                        <li>SCSS</li>
+                        <li>Gulp</li>
+                        <li>NPM</li>
+                        <li>Javascript</li>
+                        <li>JQuery</li>
+                        <li>Plesk</li>
+                        <li>Adobe Illustrator</li>
+                        <li>InDesign</li>
+                        <li>Photoshop</li>
+                    </ul>
+                    <article class="article">
+                        <slot />
+                    </article>
+			    </div>
+			</div>
+            <div class="flex p-8 max-w-screen-sm m-auto">
+                <a href={content.design} target="_blank" class="attachment">
+                    <span>See the Design</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+                <a href={content.website} target="_blank" class="attachment">
+                    <span>Visit the Website</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </main>
+    </body>
+</html>
