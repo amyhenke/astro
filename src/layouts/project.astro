@@ -9,47 +9,7 @@ let canonicalURL = Astro.canonicalURL;
 <!DOCTYPE html>
 <html lang={content.lang || 'en'}>
 	<Head title={`${content.title} | Amy Henke`} description={content.description}image={content.image} {canonicalURL}/>
-    <style lang="scss">
-        html, body {
-            height: 100%;
-            main {
-                display: flex;
-                flex-flow: column;
-                height: 100%;
-                text-align: center;
-            }
-        }
-        .pagetitlesection {
-            text-align: center;
-        }
-        .content {
-            flex: 1 1 100%;
-            background-color: var(--black);
-            color: var(--white);
-            .inner {
-                max-width: 1200px;
-                margin: 0 auto;
-                h2.subheading {
-                    text-transform: inherit;
-                    font-style: italic;
-                    font-size: 2.5rem;
-                    line-height: 3rem;
-                    text-align: center;
-                    max-width: 700px;
-                    margin: 0 auto;
-                    margin-bottom: 30px;
-                }
-                .technical {
-                    column-width: 100px;
-                    max-width: 500px;
-                    margin: 0 auto;
-                    margin-bottom: 50px;
-                    text-align: center;
-                }
-            }
-        }
-    </style>
-	<body>
+	<body class="project">
 		<main class="typography">
             <div class="pagetitlesection flex justify-center flex-col px-8 py-10">
 				<LogoBar />
@@ -82,7 +42,7 @@ let canonicalURL = Astro.canonicalURL;
                     </article>
 			    </div>
 			</div>
-            <div class="flex p-8 max-w-screen-sm m-auto">
+            <div class="flex p-8 max-w-screen-md m-auto">
                 <a href={content.design} target="_blank" class="attachment">
                     <span>See the Design</span>
                     <svg width="13px" height="10px" viewBox="0 0 13 10">
