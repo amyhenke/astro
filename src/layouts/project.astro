@@ -4,6 +4,9 @@ import LogoBar from '../components/LogoBar.astro';
 
 const { content } = Astro.props;
 let canonicalURL = Astro.canonicalURL;
+
+const allTechSpecs = content.technical
+const array = allTechSpecs.split(',')
 ---
 
 <!DOCTYPE html>
@@ -20,26 +23,17 @@ let canonicalURL = Astro.canonicalURL;
 			<div class="content p-8">
                 <div class="inner">
                     <h2 class="subheading">{content.subheading}</h2>
-                    <ul class="technical">
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                        <li>HTML5</li>
-                        <li>Silverstripe</li>
-                        <li>MAMP</li>
-                        <li>CSS3</li>
-                        <li>SCSS</li>
-                        <li>Gulp</li>
-                        <li>NPM</li>
-                        <li>Javascript</li>
-                        <li>JQuery</li>
-                        <li>Plesk</li>
-                        <li>Adobe Illustrator</li>
-                        <li>InDesign</li>
-                        <li>Photoshop</li>
-                    </ul>
                     <article class="article">
                         <slot />
                     </article>
+                    <div class="technical">
+                        <h3>Technical</h3>
+                        <ul>
+                            {array.map((item) => (
+                                <li>{item}</li>
+                            ))}
+                        </ul>
+			        </div>
 			    </div>
 			</div>
             <div class="flex p-8 max-w-screen-md m-auto">
