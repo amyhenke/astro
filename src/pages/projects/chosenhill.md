@@ -7,7 +7,7 @@ date: 2022-06-08
 image: /images/chapter-01.jpg
 author: Amy Henke
 description: School Website | Web Developer Portfolio
-subheading: A School website built using Silverstripe and PHP.
+subheading: A school website built using Silverstripe and PHP.
 design: /assets/ChosenHillSchoolWebsiteDesign.pdf
 website: https://chosenhill.fseclient.co.uk/
 ---
