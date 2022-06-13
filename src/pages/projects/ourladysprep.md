@@ -17,4 +17,4 @@ This site was built in 2019. I've included it here because I really loved the de
 
 The various shapes appear on the homepage and at the bottom of the content on every inner page. Each navigation heading has a different image for that section.
 
-You may be able to see quite a few differences in the design and the live site, this is because the school have requested certain aspects be altered to fit their changing requirements. They have also not updated their calendar or news section and this is reflected in the homepage modules. Typically we would remove the modules that aren't being used but they have requested that they stay.
+You may be able to see quite a few differences between the design and the live site, this is because the school have requested certain aspects be altered to fit their changing requirements. They have also not updated their calendar or news section and this is reflected in the homepage modules. Typically we would remove the modules that aren't being used but they have requested that they stay.

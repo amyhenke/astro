@@ -13,7 +13,7 @@ import LogoBar from '../components/LogoBar.astro';
 				<h2>Web Developer. DIY Enthusiast. Animal Lover.</h2>
 				<div class="socials mt-3">
 					<a class="ml-1" href="https://www.linkedin.com/in/amy-henke-b8836b177/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-					<a class="ml-1" href="mailto:amyleehenke@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+					<a class="ml-2 <!--ml-1-->" href="mailto:amyleehenke@gmail.com"><i class="fa-solid fa-envelope"></i></a>
 				</div>
 			</div>
 			<div class="home-nav flex flex-col uppercase p-8 text-right">
@@ -32,8 +32,10 @@ import LogoBar from '../components/LogoBar.astro';
 		flex: 1 1 550px;
 		h2 {
 			font-family: var(--font-normal);
-			font-size: 0.8rem;
-        	line-height: 1.2rem;
+			// font-size: 0.8rem;
+        	// line-height: 1.2rem;
+			font-size: 1rem;
+    		line-height: 1.5rem;
 		}
 	}
 	.home-nav {
@@ -52,6 +54,9 @@ import LogoBar from '../components/LogoBar.astro';
 	}
 	.socials {
 		a {
+			i {
+				font-size: 25px;
+			}
 			&:hover {
 				color: var(--sage);
 			}
