@@ -71,6 +71,20 @@
             max-width: 250px;
         }
     }
+    .projectlinks {
+        .linkcontainer {
+            .level1link {
+                font-size: 5rem;
+                line-height: 5.5rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-bottom: 10px;
+                margin-top: -5px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -85,6 +99,17 @@
             font-size: 6rem;
             line-height: 6.5rem;
         }
+    }
+    .projectlinks {
+        .linkcontainer {
+            .level1link {
+                font-size: 4rem;
+                line-height: 4.5rem;
+            }
+        }
+    }
+    .attachmentcontainer {
+        gap: 20px;
     }
 }
 
@@ -113,6 +138,35 @@
             line-height: 3.2rem;
         }
     }
+    .projectlinks {
+        .linkcontainer {
+            .level1link {
+                font-size: 3.5rem;
+                line-height: 4rem;
+            }
+        }
+    }
+    .typography {
+        h1 {
+            font-size: 3.7rem;
+            line-height: 4.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projectlinks {
+        .linkcontainer {
+            .level1link {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+            p {
+                font-size: 0.8rem;
+                line-height: 1.3rem;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -122,11 +176,47 @@
             line-height: 3.5rem;
         }
     }
+    .typography {
+        a {
+            &.attachment {
+                span.hide {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .typography {
+        h1 {
+            font-size: 3.2rem;
+            line-height: 3.7rem;
+        }
+    }
+    body.project {
+        main {
+            .content {
+                .inner {
+                    h2.subheading {
+                        font-size: 1.8rem;
+                        line-height: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 300px) {
     .home-nav {
         .level1link {
+            font-size: 2.7rem;
+            line-height: 3.2rem;
+        }
+    }
+    .typography {
+        h1 {
             font-size: 2.7rem;
             line-height: 3.2rem;
         }

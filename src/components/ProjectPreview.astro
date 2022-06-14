@@ -10,22 +10,3 @@ const { project } = Astro.props;
     <a href={project.url} class="level1link pr-2.5">{project.frontmatter.title}</a>
     <p class="pr-2.5">- {project.frontmatter.subtitle}</p>
 </div>
-
-<style lang="scss">
-    .linkcontainer {
-        margin-bottom: 10px;
-        .level1link {
-            font-size: 6rem;
-            line-height: 6.5rem;
-            font-family: var(--font-cursive);
-            &:hover {
-                font-style: italic;
-                transform: translate(-20px, 0%);
-                transition: 0.3s ease-in-out;
-            }
-        }
-        p {
-            margin-top: -10px;
-        }
-    }
-</style>
