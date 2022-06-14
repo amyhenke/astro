@@ -10,14 +10,14 @@ allProjects = allProjects.sort((a, b) => new Date(b.frontmatter.date).valueOf() 
 <html lang="en">
 	<Head title="Portfolio | Amy Henke" description="Web Developer Portfolio"/>
 	<body>
-		<main class="typography">
+		<main class="typography flex flex-col min-h-screen">
             <div class="pagetitlesection flex justify-center flex-col px-8 py-10">
 				<LogoBar />
 				<h1>Portfolio</h1>
 				<h2>Explore my work</h2>
                 <a href="/" class="backarrow"><i class="fa-solid fa-left-long"></i> Back</a>
 			</div>
-			<div class="projectlinks flex flex-col uppercase p-20 text-right" aria-label="Project list">
+			<div class="projectlinks flex flex-col uppercase p-8 text-right md:p-20" aria-label="Project list">
 				{allProjects.map((p) => <ProjectPreview project={p} />)}
 				<!-- <div class="linkcontainer">
 					<a href="#" class="level1link">Ecommerce</a>
@@ -31,19 +31,3 @@ allProjects = allProjects.sort((a, b) => new Date(b.frontmatter.date).valueOf() 
         </main>
     </body>
 </html>
-
-<style lang="scss">
-	html, body {
-		height: 100%;
-		main {
-			display: flex;
-			flex-flow: column;
-			height: 100%;
-		}
-	}
-	.projectlinks {
-		flex: 1 1 100%;
-		background-color: var(--black);
-        color: var(--white);
-	}
-</style>

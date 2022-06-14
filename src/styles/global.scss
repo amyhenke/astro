@@ -52,8 +52,8 @@ body {
         line-height: 2.2rem;
     }
     p {
-        font-size: 1.2rem;
-        line-height: 2rem;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
         margin-bottom: 20px;
         & > a {
             position: relative;
@@ -107,15 +107,8 @@ body {
             text-transform: uppercase;
             vertical-align: middle;
         }
-        svg {
-            position: relative;
-            top: 0;
+        i {
             margin-left: 10px;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke: var(--black);
-            stroke-width: 2;
             transform: translateX(-5px);
             transition: all 0.3s ease;
         }
@@ -125,7 +118,7 @@ body {
                 width: 100%;
                 background: var(--sage);
             }
-            svg {
+            i {
                 transform: translateX(0);
             }
             &:active {
@@ -179,6 +172,74 @@ body {
     }
 }
 
+.projectlinks {
+    flex: 1 1 100%;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.about {
+    background-color: var(--black);
+    color: var(--white);
+    .aboutimage {
+        max-width: 350px;
+        // transform: translateY(-33%);
+        transform: translateY(-150px);
+        position: relative;
+        float: right;
+        margin-left: 20px;
+        margin-bottom: -130px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        .aboutimage {
+            max-width: 250px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        .aboutimage {
+            // transform: none;
+            // margin-bottom: 20px;
+            // float: inherit;
+            // margin-left: 0;
+            // max-width: 100%;
+            transform: translateY(-70px);
+            margin-bottom: -50px;
+            max-width: 150px;
+            margin-left: 5px;
+        }
+        h2 {
+            font-size: 3rem;
+            line-height: 3.2rem;
+        }
+    }
+}
+
+.contactdetails {
+    background-color: var(--black);
+    color: var(--white);
+    p {
+        margin-bottom: 30px;
+        span {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    a {
+        &:hover {
+            color: var(--sage);
+        }
+        i {
+            font-size: 25px;
+        }
+    }
+}
+
 body.project {
     height: 100%;
     main {
@@ -194,8 +255,6 @@ body.project {
             background-color: var(--black);
             color: var(--white);
             .inner {
-                max-width: 1200px;
-                margin: 0 auto;
                 h2.subheading {
                     text-transform: inherit;
                     font-style: italic;

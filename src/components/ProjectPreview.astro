@@ -7,8 +7,8 @@ const { project } = Astro.props;
 ---
 
 <div class="linkcontainer">
-    <a href={project.url} class="level1link">{project.frontmatter.title}</a>
-    <p>- {project.frontmatter.subtitle}</p>
+    <a href={project.url} class="level1link pr-2.5">{project.frontmatter.title}</a>
+    <p class="pr-2.5">- {project.frontmatter.subtitle}</p>
 </div>
 
 <style lang="scss">

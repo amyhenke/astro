@@ -21,7 +21,7 @@ const array = allTechSpecs.split(',')
                 <a href="/portfolio" class="backarrow"><i class="fa-solid fa-left-long"></i> Back</a>
 			</div>
 			<div class="content p-8">
-                <div class="inner">
+                <div class="inner max-w-screen-xl m-auto">
                     <h2 class="subheading">{content.subheading}</h2>
                     <article class="article">
                         <slot />
@@ -39,17 +39,11 @@ const array = allTechSpecs.split(',')
             <div class="flex p-8 max-w-screen-md m-auto">
                 <a href={content.design} target="_blank" class="attachment">
                     <span>See the Design</span>
-                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
                 <a href={content.website} target="_blank" class="attachment">
                     <span>Visit the Website</span>
-                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </main>
