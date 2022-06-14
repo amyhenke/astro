@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1280px) {
+    .hero {
+        h1 {
+            font-size: 4rem;
+            line-height: 4.2rem;
+        }
+    }
+    .home-nav {
+        .level1link {
+            font-size: 10rem;
+            line-height: 10.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 900px) {
+    .home-nav {
+        .level1link {
+            font-size: 8rem;
+            line-height: 8.5rem;
+        }
+    }
+}
+
+//Macbook pro
+@media only screen and (max-width: 1600px) and (max-height: 800px) {
+    .hero {
+        h1 {
+            font-size: 4rem;
+            line-height: 4.2rem;
+        }
+    }
+    .home-nav {
+        .level1link {
+            font-size: 10rem;
+            line-height: 10.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 800px) {
+    .hero {
+        h1 {
+            font-size: 3rem;
+            line-height: 3.2rem;
+        }
+    }
+    .home-nav {
+        .level1link {
+            font-size: 8rem;
+            line-height: 8.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+        h1 {
+            font-size: 3.5rem;
+            line-height: 3.7rem;
+        }
+    }
+    .home-nav {
+        .level1link {
+            font-size: 8rem;
+            line-height: 8.5rem;
+        }
+    }
+    .about {
+        .aboutimage {
+            max-width: 250px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero {
+        h1 {
+            font-size: 3rem;
+            line-height: 3.2rem;
+        }
+    }
+    .home-nav {
+        .level1link {
+            font-size: 6rem;
+            line-height: 6.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        h1 {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+        }
+    }
+    .home-nav {
+        .level1link {
+            font-size: 4.5rem;
+            line-height: 5rem;
+        }
+    }
+    .about {
+        .aboutimage {
+            transform: translateY(-70px);
+            margin-bottom: -50px;
+            max-width: 150px;
+            margin-left: 5px;
+        }
+        h2 {
+            font-size: 3rem;
+            line-height: 3.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .home-nav {
+        .level1link {
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .home-nav {
+        .level1link {
+            font-size: 2.7rem;
+            line-height: 3.2rem;
+        }
+    }
+}

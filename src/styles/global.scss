@@ -172,6 +172,39 @@ body {
     }
 }
 
+.hero {
+    flex: 1 1 550px;
+    h2 {
+        font-family: var(--font-normal);
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+.home-nav {
+    flex: 1 1 60%;
+    align-self: flex-end;
+    .level1link {
+        font-size: 12rem;
+        line-height: 12.5rem;
+        font-family: var(--font-cursive);
+        &:hover {
+            font-style: italic;
+            transform: translate(-20px, 0%);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+.socials {
+    a {
+        i {
+            font-size: 25px;
+        }
+        &:hover {
+            color: var(--sage);
+        }
+    }
+}
+
 .projectlinks {
     flex: 1 1 100%;
     background-color: var(--black);
@@ -189,34 +222,6 @@ body {
         float: right;
         margin-left: 20px;
         margin-bottom: -130px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .about {
-        .aboutimage {
-            max-width: 250px;
-        }
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .about {
-        .aboutimage {
-            // transform: none;
-            // margin-bottom: 20px;
-            // float: inherit;
-            // margin-left: 0;
-            // max-width: 100%;
-            transform: translateY(-70px);
-            margin-bottom: -50px;
-            max-width: 150px;
-            margin-left: 5px;
-        }
-        h2 {
-            font-size: 3rem;
-            line-height: 3.2rem;
-        }
     }
 }
 
