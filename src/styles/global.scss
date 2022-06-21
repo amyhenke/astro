@@ -4,6 +4,7 @@
     --beige: #e8dcca;
     --sage: #96a480;
     --white: #fff;
+    --lilac: rgb(215, 186, 199);
 
     //FONTS
     --font-normal: "Montserrat", sans-serif;
@@ -76,6 +77,12 @@ body {
                     transition: 0.25s;
                 }
             }
+        }
+        &.pretext {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            margin-bottom: 10px;
         }
     }
     a.attachment {
@@ -308,4 +315,9 @@ body.project {
             }
         }
     }
+}
+
+body.pagenotfound {
+    background-image: url("https://source.unsplash.com/c1Jp-fo53U8");
+    background-size: cover;
 }

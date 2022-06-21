@@ -154,17 +154,11 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .projectlinks {
-        .linkcontainer {
-            .level1link {
-                font-size: 2.5rem;
-                line-height: 3rem;
-            }
-            p {
-                font-size: 0.8rem;
-                line-height: 1.3rem;
-            }
+@media only screen and (max-width: 500px) {
+    body.pagenotfound {
+        .pagetitlesection {
+            background-color: rgba(215, 186, 199, 0.7);
+            margin: 20px;
         }
     }
 }
@@ -182,6 +176,18 @@
                 span.hide {
                     display: none;
                 }
+            }
+        }
+    }
+    .projectlinks {
+        .linkcontainer {
+            .level1link {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+            p {
+                font-size: 0.8rem;
+                line-height: 1.3rem;
             }
         }
     }
