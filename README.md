@@ -1,1 +1,3 @@
-First website created with Astro - static site generator
+# Astro
+
+My portfolio website created with the static site generator.
