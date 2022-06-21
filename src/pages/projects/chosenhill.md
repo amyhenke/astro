@@ -9,7 +9,7 @@ author: Amy Henke
 description: School Website | Web Developer Portfolio
 subheading: A school website built using Silverstripe, SCSS and PHP.
 technical: PHP, MySQL, HTML5, Silverstripe, MAMP, CSS3, SCSS, Gulp, NPM, Javascript, JQuery, Plesk, Adobe Illustrator, InDesign, Photoshop
-design: /assets/ChosenHillSchoolWebsiteDesign.pdf
+design: https://drive.google.com/file/d/1SjT4URF-it8ic_xaiSWX2xu_whCt_iBf/view?usp=sharing
 website: https://chosenhill.fseclient.co.uk/
 ---
 

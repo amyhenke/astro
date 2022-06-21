@@ -9,7 +9,7 @@ author: Amy Henke
 description: School Website | Web Developer Portfolio
 subheading: A school website built using Silverstripe, SCSS and PHP.
 technical: PHP, MySQL, HTML5, Silverstripe, MAMP, CSS3, SCSS, Gulp, NPM, Javascript, JQuery, Plesk, Adobe Illustrator, InDesign, Photoshop
-design: /assets/PalmerDesign.pdf
+design: https://drive.google.com/file/d/1CD1AojEiwB5AIkGUBm-HNovDbtTET7ky/view?usp=sharing
 website: https://www.tpc.academy/
 ---
 

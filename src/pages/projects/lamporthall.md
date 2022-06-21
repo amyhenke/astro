@@ -9,7 +9,7 @@ author: Amy Henke
 description: Brochure Website | Web Developer Portfolio
 subheading: A brochure website built for a Tudor Manor in Northamptonshire using Silverstripe and PHP.
 technical: PHP, MySQL, HTML5, Silverstripe, MAMP, CSS3, SCSS, Gulp, NPM, Javascript, JQuery, Plesk, Adobe Illustrator, InDesign, Photoshop
-design: /assets/LamportHallWebsiteDesign.pdf
+design: https://drive.google.com/file/d/1grlHdDXu_OEmyMky9N0M1dDBiFpmXg5X/view?usp=sharing
 website: https://www.lamporthall.co.uk/
 ---
 
