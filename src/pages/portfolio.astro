@@ -19,14 +19,10 @@ allProjects = allProjects.sort((a, b) => new Date(b.frontmatter.date).valueOf() 
 			</div>
 			<div class="projectlinks flex flex-col uppercase p-4 text-right sm:p-8 lg:p-20" aria-label="Project list">
 				{allProjects.map((p) => <ProjectPreview project={p} />)}
-				<!-- <div class="linkcontainer">
-					<a href="#" class="level1link">Ecommerce</a>
-					<p>- Built with Node.js</p>
-				</div>
-				<div class="linkcontainer">
-					<a href="#" class="level1link">Social Platform</a>
-					<p>- Built with Javascript</p>
-				</div> -->
+				<!-- 
+					Ecommerce - Built with Node.js
+					Social Platform - Built with Javascript 
+				-->
 			</div>
         </main>
     </body>
