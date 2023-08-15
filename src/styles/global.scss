@@ -13,10 +13,33 @@
     --font-cursive: "Italiana", serif;
 }
 
+#skip-main {
+    @apply border-2;
+    @apply text-black;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    @apply absolute top-10 left-0 rounded-lg text-center mt-10 text-lg py-2 w-full;
+    @apply left-1/2 -translate-x-1/2 opacity-0 pointer-events-none;
+    max-width: theme("spacing.96");
+    z-index: 500;
+
+    &:focus,
+    &:active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-normal);
+    color: var(--black);
+}
+
 body {
+    margin: 0;
     background-color: var(--beige);
     min-height: 100vh;
-    font-family: var(--font-normal);
 }
 
 .typography {

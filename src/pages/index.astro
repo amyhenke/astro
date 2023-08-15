@@ -12,7 +12,10 @@ const { bodyClass = "hello" } = Astro.props
 ---
 
 <Layout {...seo} {bodyClass}>
-    <main class="typography min-h-screen flex flex-wrap justify-between">
+    <main
+        id="main"
+        class="typography min-h-screen flex flex-wrap justify-between"
+    >
         <div class="hero flex flex-col px-8 py-10">
             <LogoBar />
             <h1>Hey, <br /> I'm Amy Henke</h1>
