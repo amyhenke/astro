@@ -41,22 +41,22 @@ const { bodyClass = "project" } = Astro.props
                 </div>
             </div>
         </div>
-        <div
-            class="attachmentcontainer flex p-8 max-w-screen-md m-auto flex-wrap justify-center"
-        >
-            <a href={content.design} target="_blank" class="attachment">
-                <span class="hide">See the</span><span>Design</span>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href={content.website} target="_blank" class="attachment">
-                <span class="hide">Visit the</span><span>Website</span>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+        <div class="attachmentcontainer flex p-8 flex-wrap justify-center">
+            <div class="links max-w-screen-md m-auto">
+                <a href={content.design} target="_blank" class="attachment">
+                    <span class="hide">See the</span><span>Design</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href={content.website} target="_blank" class="attachment">
+                    <span class="hide">Visit the</span><span>Website</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <small class="copyright"
+                >Copyright &copy; <script>
+                    document.write(new Date().getFullYear())
+                </script> All Rights Reserved</small
+            >
         </div>
-        <small class="copyright"
-            >Copyright &copy; <script>
-                document.write(new Date().getFullYear())
-            </script> All Rights Reserved</small
-        >
     </main>
 </Layout>
