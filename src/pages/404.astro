@@ -13,8 +13,7 @@ const seo = {
 const { bodyClass = "pagenotfound" } = Astro.props
 ---
 
-<Layout {...seo} {...bodyClass}>
-    <!-- <body class="pagenotfound"> -->
+<Layout {...seo} {bodyClass}>
     <main class="typography flex flex-col min-h-screen">
         <div
             class="pagetitlesection flex justify-center flex-col px-8 py-10 max-w-screen-md"
@@ -27,5 +26,4 @@ const { bodyClass = "pagenotfound" } = Astro.props
             >
         </div>
     </main>
-    <!-- </body> -->
 </Layout>

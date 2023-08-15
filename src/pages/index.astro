@@ -8,9 +8,10 @@ const seo = {
     image: "../socialbanner.jpg",
     canonicalURL: "https://amyhenke.com/",
 }
+const { bodyClass = "hello" } = Astro.props
 ---
 
-<Layout {...seo}>
+<Layout {...seo} {bodyClass}>
     <main class="typography min-h-screen flex flex-wrap justify-between">
         <div class="hero flex flex-col px-8 py-10">
             <LogoBar />
