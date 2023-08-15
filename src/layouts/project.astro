@@ -1,26 +1,35 @@
 ---
-import Head from '../components/Head.astro';
-import LogoBar from '../components/LogoBar.astro';
+import Head from "../components/Head.astro"
+import LogoBar from "../components/LogoBar.astro"
 
-const { content } = Astro.props;
-let canonicalURL = Astro.canonicalURL;
+const { content } = Astro.props
+let canonicalURL = Astro.canonicalURL
 
 const allTechSpecs = content.technical
-const array = allTechSpecs.split(',')
+const array = allTechSpecs.split(",")
 ---
 
 <!DOCTYPE html>
-<html lang={content.lang || 'en'}>
-	<Head title={`${content.title} | Amy Henke`} description={content.description}image={content.image} {canonicalURL}/>
-	<body class="project">
-		<main class="typography">
-            <div class="pagetitlesection flex justify-center flex-col px-8 py-10">
-				<LogoBar />
-				<h1 class="title">{content.title}</h1>
+<html lang={content.lang || "en"}>
+    <Head
+        title={`${content.title} | Amy Henke`}
+        description={content.description}
+        image={content.image}
+        {canonicalURL}
+    />
+    <body class="project">
+        <main class="typography">
+            <div
+                class="pagetitlesection flex justify-center flex-col px-8 py-10"
+            >
+                <LogoBar />
+                <h1 class="title">{content.title}</h1>
                 <h2 class="subtitle">{content.subtitle}</h2>
-                <a href="/portfolio" class="backarrow"><i class="fa-solid fa-left-long"></i> Back</a>
-			</div>
-			<div class="content p-8">
+                <a href="/portfolio" class="backarrow"
+                    ><i class="fa-solid fa-left-long"></i> Back</a
+                >
+            </div>
+            <div class="content p-8">
                 <div class="inner max-w-screen-xl m-auto">
                     <h2 class="subheading">{content.subheading}</h2>
                     <article class="article">
@@ -29,24 +38,28 @@ const array = allTechSpecs.split(',')
                     <div class="technical">
                         <h3>Technical</h3>
                         <ul>
-                            {array.map((item) => (
-                                <li>{item}</li>
-                            ))}
+                            {array.map(item => <li>{item}</li>)}
                         </ul>
-			        </div>
-			    </div>
-			</div>
-            <div class="attachmentcontainer flex p-8 max-w-screen-md m-auto flex-wrap justify-center">
+                    </div>
+                </div>
+            </div>
+            <div
+                class="attachmentcontainer flex p-8 max-w-screen-md m-auto flex-wrap justify-center"
+            >
                 <a href={content.design} target="_blank" class="attachment">
-                    <span class="hide">See the </span><span>Design</span>
+                    <span class="hide">See the</span><span>Design</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
                 <a href={content.website} target="_blank" class="attachment">
-                    <span class="hide">Visit the </span><span>Website</span>
+                    <span class="hide">Visit the</span><span>Website</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
+            <small class="copyright"
+                >Copyright &copy; <script>
+                    document.write(new Date().getFullYear())
+                </script> All Rights Reserved</small
+            >
         </main>
-        <small class="copyright">Copyright 2022</small>
     </body>
 </html>
