@@ -117,12 +117,12 @@ body {
     }
     a.attachment {
         position: relative;
-        margin: 5px;
+        margin: auto 5px;
         padding: 19px 22px;
         transition: all 0.2s ease;
         display: flex;
         align-items: center;
-        max-width: 300px;
+        max-width: 350px;
         &:before {
             content: "";
             position: absolute;
@@ -320,8 +320,8 @@ body.project {
                 h2.subheading {
                     text-transform: inherit;
                     font-style: italic;
-                    font-size: 2.5rem;
-                    line-height: 3rem;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
                     text-align: center;
                     max-width: 700px;
                     margin: 0 auto;
@@ -333,14 +333,12 @@ body.project {
                     margin-bottom: 50px;
                     text-align: center;
                     h3 {
-                        font-size: 2.5rem;
-                        line-height: 2.7rem;
+                        font-size: 2rem;
+                        line-height: 2.2rem;
                         margin: 50px 0 15px 0;
                     }
                     ul {
                         column-width: 100px;
-                        font-size: 1.2rem;
-                        line-height: 2rem;
                     }
                 }
             }
@@ -358,7 +356,10 @@ body.pagenotfound {
 
 small.copyright {
     position: absolute;
-    left: 10px;
+    left: 0;
     font-size: 11px;
     bottom: 5px;
+    width: 100%;
+    padding: 0 10px;
+    text-align: left;
 }
