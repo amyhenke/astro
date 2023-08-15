@@ -114,6 +114,11 @@
     .attachmentcontainer {
         gap: 20px;
     }
+    .typography {
+        a.attachment {
+            margin: 5px;
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
