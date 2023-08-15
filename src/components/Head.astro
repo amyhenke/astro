@@ -1,15 +1,15 @@
 ---
-import '../styles/global.scss';
-import '../styles/responsive.scss';
+import "../styles/global.scss"
+import "../styles/responsive.scss"
 
 export interface Props {
-	title: string;
-    description: string;
-    image?: string;
-    canonicalURL?: string | URL;
+    title: string
+    description: string
+    image?: string
+    canonicalURL?: string | URL
 }
 
-const { title, description, image, canonicalURL } = Astro.props as Props;
+const { title, description, image, canonicalURL } = Astro.props as Props
 ---
 
 <head>
@@ -31,17 +31,19 @@ const { title, description, image, canonicalURL } = Astro.props as Props;
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    {image && (<meta property="og:image" content={new URL(image, canonicalURL)}>)}
+    {
+        image && (
+            <meta property="og:image" content={new URL(image, canonicalURL)} />
+        )
+    }
 
     <!-- Twitter -->
-    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <meta
+        name="twitter:card"
+        content={image ? "summary_large_image" : "summary"}
+    />
     <meta property="twitter:url" content={canonicalURL} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    {image && (<meta name="twitter:image" content={image}>)}
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    {image && <meta name="twitter:image" content={image} />}
 </head>
