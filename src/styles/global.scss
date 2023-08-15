@@ -196,8 +196,8 @@ body {
         font-size: 12rem;
         line-height: 12.5rem;
         font-family: var(--font-cursive);
+        transition: 0.3s ease-in-out;
         &:hover {
-            font-style: italic;
             transform: translate(-20px, 0%);
             transition: 0.3s ease-in-out;
         }
