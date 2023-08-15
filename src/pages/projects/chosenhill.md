@@ -10,7 +10,7 @@ description: School Website | Web Developer Portfolio
 subheading: A school website built using Silverstripe, SCSS and PHP.
 technical: PHP, MySQL, HTML5, Silverstripe, MAMP, CSS3, SCSS, Gulp, NPM, Javascript, JQuery, Plesk, Adobe Illustrator, InDesign, Photoshop
 design: https://drive.google.com/file/d/1SjT4URF-it8ic_xaiSWX2xu_whCt_iBf/view?usp=sharing
-website: https://chosenhill.fseclient.co.uk/
+website: https://chosenhillschool.co.uk/
 ---
 
 This is a multi-homepage site in which the main school and sixth form have completely seperate areas of the website. As this is a feature that started to be regularly requested within the last couple of years, we have added this functionality into our core code base. This now requires a checkbox in the CMS to activate, reordering the navigation with the homepage as the parent to all the other pages within that section of the sitetree and setting the individual logos and taglines within each homepage.
