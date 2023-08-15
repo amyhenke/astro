@@ -41,8 +41,8 @@ const { bodyClass = "project" } = Astro.props
                 </div>
             </div>
         </div>
-        <div class="attachmentcontainer flex p-8 flex-wrap justify-center">
-            <div class="links max-w-screen-md m-auto">
+        <div class="attachmentcontainer p-8">
+            <div class="flex flex-wrap justify-center max-w-screen-md m-auto">
                 <a href={content.design} target="_blank" class="attachment">
                     <span class="hide">See the</span><span>Design</span>
                     <i class="fa-solid fa-arrow-right"></i>
@@ -53,7 +53,7 @@ const { bodyClass = "project" } = Astro.props
                 </a>
             </div>
             <small class="copyright"
-                >Copyright &copy; <script>
+                >Copyright &copy; <script is:inline>
                     document.write(new Date().getFullYear())
                 </script> All Rights Reserved</small
             >
