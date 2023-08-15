@@ -1,28 +1,42 @@
 ---
-import Head from '../components/Head.astro';
-import LogoBar from '../components/LogoBar.astro';
+import Layout from "../layouts/Layout.astro"
+import LogoBar from "../components/LogoBar.astro"
+
+const seo = {
+    title: "Amy Henke",
+    description: "Web Developer Portfolio",
+    image: "../socialbanner.jpg",
+    canonicalURL: "https://amyhenke.com/",
+}
 ---
-<!DOCTYPE html>
-<html lang="en">
-	<Head title="Amy Henke" description="Web Developer Portfolio"/>
-	<body>
-		<main class="typography min-h-screen flex flex-wrap justify-between">
-			<div class="hero flex flex-col px-8 py-10">
-				<LogoBar />
-				<h1>Hey, <br/> I'm Amy Henke</h1>
-				<h2>Web Developer. DIY Enthusiast. Animal Lover.</h2>
-				<div class="socials mt-3">
-					<a class="ml-1" href="https://www.linkedin.com/in/amy-henke-b8836b177/" target="_blank" aria-label="Linked In"><i class="fa-brands fa-linkedin-in"></i></a>
-					<a class="ml-2" href="mailto:amyleehenke@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-				</div>
-			</div>
-			<div class="home-nav flex flex-col uppercase p-8 text-right">
-				<a href="/portfolio" class="level1link pr-3">Portfolio</a>
 
-				<a href="/about" class="level1link pr-3">About</a>
+<Layout {...seo}>
+    <main class="typography min-h-screen flex flex-wrap justify-between">
+        <div class="hero flex flex-col px-8 py-10">
+            <LogoBar />
+            <h1>Hey, <br /> I'm Amy Henke</h1>
+            <h2>Web Developer. DIY Enthusiast. Animal Lover.</h2>
+            <div class="socials mt-3">
+                <a
+                    class="ml-1"
+                    href="https://www.linkedin.com/in/amy-henke-b8836b177/"
+                    target="_blank"
+                    aria-label="Linked In"
+                    ><i class="fa-brands fa-linkedin-in"></i></a
+                >
+                <a
+                    class="ml-2"
+                    href="mailto:amyleehenke@gmail.com"
+                    aria-label="Email"><i class="fa-solid fa-envelope"></i></a
+                >
+            </div>
+        </div>
+        <div class="home-nav flex flex-col uppercase p-8 text-right">
+            <a href="/portfolio" class="level1link pr-3">Portfolio</a>
 
-				<a href="/contact" class="level1link pr-3">Contact</a>
-			</div>
-		</main>
-	</body>
-</html>
+            <a href="/about" class="level1link pr-3">About</a>
+
+            <a href="/contact" class="level1link pr-3">Contact</a>
+        </div>
+    </main>
+</Layout>

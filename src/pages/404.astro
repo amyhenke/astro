@@ -1,17 +1,31 @@
 ---
-import Head from '../components/Head.astro';
+import Layout from "../layouts/Layout.astro"
+import LogoBar from "../components/LogoBar.astro"
+import About from "./about.astro"
+import Contact from "./contact.astro"
+
+const seo = {
+    title: "404 | Amy Henke",
+    description: "Web Developer Portfolio",
+    image: "../socialbanner.jpg",
+    canonicalURL: "https://amyhenke.com/",
+}
+const { bodyClass = "pagenotfound" } = Astro.props
 ---
-<!DOCTYPE html>
-<html lang="en">
-	<Head title="404 | Amy Henke" description="Web Developer Portfolio"/>
-	<body class="pagenotfound">
-		<main class="typography flex flex-col min-h-screen">
-            <div class="pagetitlesection flex justify-center flex-col px-8 py-10 max-w-screen-md">
-                <p class="pretext">404 Error</p>
-				<h1>Uh oh! I think you're lost.</h1>
-                <h2>It looks like the page you're looking for doesn't exist.</h2>
-                <a href="/" class="backarrow"><i class="fa-solid fa-left-long"></i> Back Home</a>
-			</div>
-        </main>
-    </body>
-</html>
+
+<Layout {...seo} {...bodyClass}>
+    <!-- <body class="pagenotfound"> -->
+    <main class="typography flex flex-col min-h-screen">
+        <div
+            class="pagetitlesection flex justify-center flex-col px-8 py-10 max-w-screen-md"
+        >
+            <p class="pretext">404 Error</p>
+            <h1>Uh oh! I think you're lost.</h1>
+            <h2>It looks like the page you're looking for doesn't exist.</h2>
+            <a href="/" class="backarrow"
+                ><i class="fa-solid fa-left-long"></i> Back Home</a
+            >
+        </div>
+    </main>
+    <!-- </body> -->
+</Layout>

@@ -7,9 +7,11 @@ export interface Props {
     description: string
     image?: string
     canonicalURL?: string | URL
+    bodyClass?: string
 }
 
-const { title, description, image, canonicalURL } = Astro.props as Props
+const { title, description, image, canonicalURL, bodyClass } =
+    Astro.props as Props
 ---
 
 <head>

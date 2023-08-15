@@ -1,72 +1,75 @@
 ---
-import Head from "../components/Head.astro"
+import Layout from "../layouts/Layout.astro"
 import LogoBar from "../components/LogoBar.astro"
+import Contact from "./contact.astro"
+
+const seo = {
+    title: "About | Amy Henke",
+    description: "Web Developer Portfolio",
+    image: "../socialbanner.jpg",
+    canonicalURL: "https://amyhenke.com/",
+}
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    <Head title="About | Amy Henke" description="Web Developer Portfolio" />
-    <body>
-        <main class="typography flex flex-col min-h-screen">
-            <div
-                class="pagetitlesection flex justify-center flex-col px-8 py-10 max-w-screen-md"
+<Layout {...seo}>
+    <main class="typography flex flex-col min-h-screen">
+        <div
+            class="pagetitlesection flex justify-center flex-col px-8 py-10 max-w-screen-md"
+        >
+            <LogoBar />
+            <h1>About</h1>
+            <a href="/" class="backarrow"
+                ><i class="fa-solid fa-left-long"></i> Back</a
             >
-                <LogoBar />
-                <h1>About</h1>
-                <a href="/" class="backarrow"
-                    ><i class="fa-solid fa-left-long"></i> Back</a
-                >
-            </div>
-            <div class="about px-8 py-10 flex-1">
-                <div class="content max-w-screen-lg m-auto">
-                    <img
-                        src="../assets/aboutpic.jpg"
-                        alt="Amy and Honey"
-                        class="aboutimage"
-                    />
-                    <h2 class="mb-5">Hey, I'm Amy</h2>
-                    <p>
-                        A self-motivated and creative individual, with excellent
-                        organisational and interpersonal skills.
-                    </p>
-                    <p>
-                        I progressed from a first-class History graduate to a
-                        Master of Computer Science with a Distinction, that I
-                        completed in 2018. This process resulted in the
-                        development of adaptable and versatile characteristics.
-                    </p>
-                    <p>
-                        I have 4+ years experience as a web developer, with
-                        primary focus on front-end technologies.
-                    </p>
-                    <p>
-                        I have been using my spare time to improve my knowledge
-                        through online courses and independent projects. My
-                        focus has been on Node.js, ES6, and Astro.
-                    </p>
-                    <p>
-                        In my free time I enjoy travelling, DIY, playing sims
-                        and getting out in nature.
-                    </p>
-                    <p>
-                        I love to learn and am seeking to deepen my skills with
-                        the guidance of a cutting-edge company.
-                    </p>
-                    <h3 class="mt-10 mb-2 text-4xl">Skills</h3>
-                    <p>
-                        Javascript / Node.JS / HTML / CSS / SCSS / NPM / Gulp /
-                        PHP / Astro / Silverstripe / Wordpress / SQL / MAMP /
-                        jQuery / Git / Cloudflare / cPanel / Plesk / Postman /
-                        Netlify / Heroku / InDesign / Photoshop / Illustrator /
-                        Responsive
-                    </p>
-                    <br />
-                    <!-- <a href="#" target="_blank" class="attachment">
+        </div>
+        <div class="about px-8 py-10 flex-1">
+            <div class="content max-w-screen-lg m-auto">
+                <img
+                    src="../assets/aboutpic.jpg"
+                    alt="Amy and Honey"
+                    class="aboutimage"
+                />
+                <h2 class="mb-5">Hey, I'm Amy</h2>
+                <p>
+                    A self-motivated and creative individual, with excellent
+                    organisational and interpersonal skills.
+                </p>
+                <p>
+                    I progressed from a first-class History graduate to a Master
+                    of Computer Science with a Distinction, that I completed in
+                    2018. This process resulted in the development of adaptable
+                    and versatile characteristics.
+                </p>
+                <p>
+                    I have 4+ years experience as a web developer, with primary
+                    focus on front-end technologies.
+                </p>
+                <p>
+                    I have been using my spare time to improve my knowledge
+                    through online courses and independent projects. My focus
+                    has been on Node.js, ES6, and Astro.
+                </p>
+                <p>
+                    In my free time I enjoy travelling, DIY, playing sims and
+                    getting out in nature.
+                </p>
+                <p>
+                    I love to learn and am seeking to deepen my skills with the
+                    guidance of a cutting-edge company.
+                </p>
+                <h3 class="mt-10 mb-2 text-4xl">Skills</h3>
+                <p>
+                    Javascript / Node.JS / HTML / CSS / SCSS / NPM / Gulp / PHP
+                    / Astro / Silverstripe / Wordpress / SQL / MAMP / jQuery /
+                    Git / Cloudflare / cPanel / Plesk / Postman / Netlify /
+                    Heroku / InDesign / Photoshop / Illustrator / Responsive
+                </p>
+                <br />
+                <!-- <a href="#" target="_blank" class="attachment">
 						<span>My CV</span>
 						<i class="fa-solid fa-arrow-right"></i>
 					</a> -->
-                </div>
             </div>
-        </main>
-    </body>
-</html>
+        </div>
+    </main>
+</Layout>
