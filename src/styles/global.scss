@@ -364,3 +364,12 @@ small.copyright {
     padding: 0 10px;
     text-align: left;
 }
+
+.buttonstyle {
+    background-color: var(--sage);
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+        background-color: var(--black);
+    }
+}
