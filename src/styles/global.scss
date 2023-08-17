@@ -366,10 +366,10 @@ small.copyright {
 }
 
 button.buttonstyle {
-    background-color: var(--beige);
+    background-color: var(--sage);
     text-transform: uppercase;
     font-weight: bold;
     &:hover {
-        background-color: var(--sage);
+        background-color: var(--white);
     }
 }
