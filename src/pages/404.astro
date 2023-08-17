@@ -6,10 +6,11 @@ const seo = {
     description: "Web Developer Portfolio",
     image: "../socialbanner.jpg",
 }
-const { bodyClass = "pagenotfound" } = Astro.props
+// const { bodyClass = "pagenotfound" } = Astro.props
 ---
 
-<Layout {seo} {bodyClass}>
+<Layout {...seo}>
+    <!-- <Layout {...seo} {bodyClass}> -->
     <main id="main" class="typography flex flex-col min-h-screen">
         <div
             class="pagetitlesection flex justify-center flex-col px-8 py-10 max-w-screen-md"

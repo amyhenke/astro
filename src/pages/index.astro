@@ -8,10 +8,11 @@ const seo = {
     image: "../socialbanner.jpg",
     canonicalURL: "https://amyhenke.com/",
 }
-const { bodyClass = "hello" } = Astro.props
+// const { bodyClass = "hello" } = Astro.props
 ---
 
-<Layout {...seo} {bodyClass}>
+<Layout {seo}>
+    <!-- <Layout {...seo} {bodyClass}> -->
     <main
         id="main"
         class="typography min-h-screen flex flex-wrap justify-between"
