@@ -3,19 +3,18 @@ import Head from "../components/Head.astro"
 
 export interface Props {
     seo?: Props
-    // bodyClass?: Props
+    bodyClass?: Props
 }
 
 const { seo } = Astro.props
-// const { bodyClass } = Astro.props
+const { bodyClass } = Astro.props
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <Head {...seo} />
 
-    <body>
-        <!-- <body class={bodyClass}> -->
+    <body class={bodyClass}>
         <a href="#main" id="skip-main">Skip to main content</a>
 
         <slot />
