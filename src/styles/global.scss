@@ -373,3 +373,14 @@ button.buttonstyle {
         background-color: var(--white);
     }
 }
+
+// reCaptcha styling
+.rc-anchor-light {
+    background: var(--black);
+    color: var(--white);
+    border: none;
+}
+
+.g-recaptcha {
+    margin-bottom: 20px;
+}
