@@ -376,9 +376,9 @@ button.buttonstyle {
 
 // reCaptcha styling
 .rc-anchor-light {
-    background: var(--black);
-    color: var(--white);
-    border: none;
+    background: var(--black) !important;
+    color: var(--white) !important;
+    border: none !important;
 }
 
 .g-recaptcha {
