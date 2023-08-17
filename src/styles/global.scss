@@ -365,11 +365,11 @@ small.copyright {
     text-align: left;
 }
 
-.buttonstyle {
-    background-color: var(--sage);
+button.buttonstyle {
+    background-color: var(--beige);
     text-transform: uppercase;
     font-weight: bold;
     &:hover {
-        background-color: var(--black);
+        background-color: var(--sage);
     }
 }
