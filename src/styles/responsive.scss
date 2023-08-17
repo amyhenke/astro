@@ -199,6 +199,11 @@
             }
         }
     }
+    #recaptcha-container {
+        .rc-anchor-normal {
+            width: 200px !important;
+        }
+    }
 }
 
 @media only screen and (max-width: 350px) {
