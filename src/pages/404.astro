@@ -1,18 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import LogoBar from "../components/LogoBar.astro"
-import About from "./about.astro"
-import Contact from "./contact.astro"
 
 const seo = {
-    title: "404 | Amy Henke",
+    title: "Page Not Found | Amy Henke",
     description: "Web Developer Portfolio",
     image: "../socialbanner.jpg",
 }
 const { bodyClass = "pagenotfound" } = Astro.props
 ---
 
-<Layout {...seo} {bodyClass}>
+<Layout {seo} {bodyClass}>
     <main id="main" class="typography flex flex-col min-h-screen">
         <div
             class="pagetitlesection flex justify-center flex-col px-8 py-10 max-w-screen-md"
