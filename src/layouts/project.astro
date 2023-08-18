@@ -17,7 +17,8 @@ const seo = {
 const { bodyClass = "project" } = Astro.props
 ---
 
-<Layout {...seo} {bodyClass}>
+<Layout {seo} {bodyClass}>
+    <!-- <Layout {...seo}> -->
     <main class="typography">
         <div class="pagetitlesection flex justify-center flex-col px-8 py-10">
             <LogoBar />

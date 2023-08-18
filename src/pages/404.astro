@@ -9,7 +9,8 @@ const seo = {
 const { bodyClass = "pagenotfound" } = Astro.props
 ---
 
-<Layout {...seo} {bodyClass}>
+<Layout {seo} {bodyClass}>
+    <!-- <Layout {...seo}> -->
     <main id="main" class="typography flex flex-col min-h-screen">
         <div
             class="pagetitlesection flex justify-center flex-col px-8 py-10 max-w-screen-md"

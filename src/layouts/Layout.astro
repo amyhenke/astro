@@ -6,8 +6,8 @@ export interface Props {
     bodyClass?: Props
 }
 
-const { seo } = Astro.props
-const { bodyClass } = Astro.props
+// const { seo } = Astro.props
+const { seo, bodyClass } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -15,6 +15,7 @@ const { bodyClass } = Astro.props
     <Head {...seo} />
 
     <body class={bodyClass}>
+        <!-- <body> -->
         <a href="#main" id="skip-main">Skip to main content</a>
 
         <slot />
