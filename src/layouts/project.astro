@@ -3,7 +3,6 @@ import Layout from "../layouts/Layout.astro"
 import LogoBar from "../components/LogoBar.astro"
 
 const { content } = Astro.props
-// let canonicalURL = Astro.canonicalURL
 
 const allTechSpecs = content.technical
 const array = allTechSpecs.split(",")
@@ -18,7 +17,6 @@ const { bodyClass = "project" } = Astro.props
 ---
 
 <Layout {seo} {bodyClass}>
-    <!-- <Layout {...seo}> -->
     <main class="typography">
         <div class="pagetitlesection flex justify-center flex-col px-8 py-10">
             <LogoBar />
