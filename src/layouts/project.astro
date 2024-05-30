@@ -42,14 +42,33 @@ const { bodyClass = "project" } = Astro.props
         </div>
         <div class="attachmentcontainer p-8">
             <div class="flex flex-wrap justify-center max-w-screen-md m-auto">
-                <a href={content.design} target="_blank" class="attachment">
-                    <span class="hide">See the</span><span>Design</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href={content.website} target="_blank" class="attachment">
-                    <span class="hide">Visit the</span><span>Website</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                {
+                    // template conditional (if statement for frontmatter)
+                    content.design && (
+                        <a
+                            href={content.design}
+                            target="_blank"
+                            class="attachment"
+                        >
+                            <span class="hide">See the</span>
+                            <span>Design</span>
+                            <i class="fa-solid fa-arrow-right" />
+                        </a>
+                    )
+                }
+                {
+                    content.website && (
+                        <a
+                            href={content.website}
+                            target="_blank"
+                            class="attachment"
+                        >
+                            <span class="hide">Visit the</span>
+                            <span>Website</span>
+                            <i class="fa-solid fa-arrow-right" />
+                        </a>
+                    )
+                }
             </div>
             <small class="copyright"
                 >Copyright &copy; <script is:inline>
