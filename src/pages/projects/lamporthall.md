@@ -19,8 +19,8 @@ I particulary enjoyed building this site as the majority of our clients are educ
 
 Typically, we create our homepages by adding in the relevant modules in the CMS then modify the PHP to add additional fields, render them using Silverstripe's templating language and style using SCSS.
 
-The majority of the work is usually in creating the homepage as the regular content pages have previously constructed _bloqs_ that we are able to adapt and style based on each site. However, on this site the top level headings seen in the nav required an additional page type which included many extra fields and three dataobjects to accommodate for the links, slider and ticket card data.
+The majority of the work is usually in creating the homepage as the regular content pages have previously constructed _bloqs_ that we are able to adapt and style based on each site. However, on this site the top level headings seen in the navigation required an additional page type which included many extra fields and data objects to accommodate for the links, slider and ticket card data.
 
-The client wanted to use a service called Beyonk to sell tickets to their events. This required integration using an iframe which was also added by including three fields.
+The client wanted to use a service called Beyonk which required integration to sell tickets to their events.
 
 When adding extra inputs into the CMS, we always try to ensure that they are laid out in a logical mannor to avoid confusing the users. This reduces support calls and keeps the CMS nice and organised.

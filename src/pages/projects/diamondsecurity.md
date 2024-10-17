@@ -9,7 +9,7 @@ author: Amy Henke
 description: Astro Website | Web Developer Portfolio
 subheading: A business website built using Astro, Node.js, SASS and Tailwind.
 technical: Astro, Node.js, SASS, Tailwind CSS, HTML5, CSS3, NPM, Javascript, GitHub, Netlify
-website: https://diamondsecurity.co/
+website: https://diamondsecurity.netlify.app/
 ---
 
 This website was developed for a security company using [Astro](https://astro.build/ "Astro"), and I thoroughly enjoyed the process. It allowed me to explore the framework's documentation in depth.
@@ -21,3 +21,6 @@ I experimented with [Tailwind CSS](https://tailwindcss.com/ "Tailwind") and adde
 Throughout this project, I implemented layouts, components and frontmatter to enhance functionality. Layout and component files minimized code duplication by encapsulating the head, navigation, and footer. In addition, a _card_ component was used to effectively produce the 'services' data objects.
 
 This site was built with speed and efficiency as top priorities, achieving 100% in performance, accessibility, best practices and SEO on [Google's PageSpeed Insights](https://pagespeed.web.dev/analysis/https-diamondsecurity-co/fj17p8a2ak?form_factor=desktop "Google's PageSpeed Insights"). SEO was managed using frontmatter in the head component by including fields for descriptions, social images, and canonical URLs on each page. Accessibility was addressed with aria-labels, tab indexing, and a 'skip to content' button. The [Web Accessibility Evaluation Tool](https://wave.webaim.org/ "WAVE") was used to ensure any errors relating to this were properly resolved.
+
+<!-- https://mizuaccounting.netlify.app/ -->
+<!-- diamond security is based off the same template as mizu. rewrite so mizu takes most of this text, then write based off the same template I created diamond security but altering styling and content, and adding contact page with form -->
